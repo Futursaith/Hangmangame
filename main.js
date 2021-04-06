@@ -70,22 +70,6 @@ while (appState.trialsCount < 7) {
     // affichage du pendu
     console.log(hangmanDrawings[appState.trialsCount]);
 
-    /**
-     * 
-     * on affiche de nouveau l'indice à l'utilisateur => displayedWord
-     *  - prendre le mot à deviner => wordToGuess
-     *  - prendre le mot entré par l'utilisateur => userAnswer
-     *  - comparer ces deux mots
-     *  - mettre à jour le mot affiché (displayedWord) avec les lettres qu'a deviné l'utilisateur
-     *    * displayedWord = fonctionQuiMetAJourLeMotAAfficher(
-     * 
-     * 
-     * 1) à partir de la réponse de l'utilisateur, vérifier que la lettre ou suite de lettres qu'il a entré
-     *    correspond à une lettre ou une suite de lettres du mot à vérifier
-     * 2) si une lettre ou une suite de lettres entrés par l'utilisateur est valide, alors on affiche ces 
-     *    lettres dans le mot à deviner
-     * 
-     */
     displayedWord = compareWords(userAnswer, wordToGuess, displayedWord);
 
 
