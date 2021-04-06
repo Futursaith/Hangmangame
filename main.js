@@ -56,13 +56,13 @@ const compareWords = (userAnswer, wordToGuess, displayedWord) => {
 // loop du jeu
 while (appState.trialsCount < 7) {
 
-  const userAnswser = readlineSync.question(`
+  const userAnswer = readlineSync.question(`
     Guess the word or be hanged !\n
     The word is ${displayedWord} \n
     You can try ${7 - appState.trialsCount} times !\n
   ` );
 
-  if (userAnswser.toLowerCase() !== wordToGuess.toLowerCase()) {
+  if (userAnswer.toLowerCase() !== wordToGuess.toLowerCase()) {
 
     // on incrémente le nombre d'essais faits par l'utilisateur de 1
     appState.trialsCount++;
